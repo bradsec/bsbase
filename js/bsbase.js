@@ -15,7 +15,7 @@ menuButton.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu');
     menuIcon.classList.toggle('change');
     mainEl.classList.toggle('prevent-scroll');
-    footerEl.classList.toggle('prevent-scroll');
+    footerEl.classList.toggle('hidden');
     blurEl.classList.toggle('hidden');
 });
 
@@ -25,7 +25,7 @@ window.addEventListener("resize", function() {
     navLinks.classList.remove('mobile-menu');
     menuIcon.classList.remove('change');
     mainEl.classList.remove('prevent-scroll');
-    footerEl.classList.remove('prevent-scroll');
+    footerEl.classList.remove('hidden');
     blurEl.classList.add('hidden');
   }
 });

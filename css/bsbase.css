@@ -180,31 +180,45 @@ a:hover {
     width: 100%;
 }
 
-#header, #main, #footer {
+header, main, footer {
+    margin: 0 auto;
     padding: var(--padding);
     outline: var(--debug-layout-outline);
     width: 100%;
 }
 
-#header {
+header {
     z-index: 299;
     display: inline-block;
 }
 
-#main {
+main {
+    position: relative;
     background-color: var(--main-background-color);
-    margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 190px;
     max-width: 1200px;
     border-radius: 6px;
 }
 
-#footer {
-    margin: 0 auto;
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
+    height: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
 }
 
 #branding {
@@ -547,7 +561,7 @@ label {
     border: solid var(--color-gray-5);
     border-width: 0 4px 4px 0;
     display: inline-block;
-    padding: 6px;
+    padding: 4px;
     transform: rotate(-135deg);
   }
 
