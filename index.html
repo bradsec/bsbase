@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Template with Responsive Menu and Theme Switcher" />
+    <meta name="author" content="BRADSEC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#202020" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bsbase.css">
+    <title>BSBase HTML CSS JS Template</title>
+</head>
+
+<body>
+    <div id="blur-overlay" class="hidden"></div>
+    <div id="alert-banner" class="alert hidden"></div>
+    <div class="wrapper">
+        <header id="header">
+            <nav class="navbar">
+                <!-- <div id="branding"><a href="https://github.com/bradsec"><img src="img/bradsec.svg" class="svg-filter-white" alt="BRADSEC Logo" /></a></div>  -->
+                <div id="branding"><a href="https://github.com/bradsec">BRAD<span class="bold">SEC</span></a></div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#1">Home</a></li>
+                        <li><a href="#2">About</a></li>
+                        <li><a href="#3">Services</a></li>
+                        <li><a href="#4">Portfolio</a></li>
+                        <li><a href="#5">Blog</a></li>
+                        <li><a href="#7">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-trigger">
+                    <div class="menu-icon">
+                        <div class="barTop"></div>
+                        <div class="barMiddle"></div>
+                        <div class="barBottom"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+
+            <section">
+                    <h1>BSBase - A responsive mobile friendly baseline HTML CSS JS Template</h1>
+                    <button id="toggleTheme">Toggle Theme</button>
+                    <button id="showSuccessAlert">Show Success Alert</button>
+                    <button id="showInfoAlert">Show Info Alert</button>
+                    <button id="showWarningAlert">Show Warning Alert</button>
+                    <button id="showDangerAlert">Show Danger Alert</button>
+            </section>
+
+            <section class="typography-section">
+                <h2>Typography</h2>
+                <div class="typography-content">
+                    <h1>Heading H1</h1>
+                    <p>Paragraph Text 1 Lorem ipsum dolor sit amet, consectetur <a href="#">testing link</a> adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                    <h2>Heading H2</h2>
+                    <p>Paragraph Text 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                    <h3>Heading H3</h3>
+                    <p>Paragraph Text 3 Lorem ipsum dolor <a href="#">testing link</a> sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                    <h4>Heading H4</h4>
+                    <h5>Heading H5</h5>
+                    <h6>Heading H6</h6>
+                </div>
+            </section>
+            
+            <section class="code-section">
+                <h2>Code Snippets</h2>
+                <p>This is an <code class="highlight">inline command or code highlight</code></p>
+                <div class="code-content">
+                    <div class="pre-wrapper">
+                        <pre class="code-block"><code>This is a short command line...</code></pre>
+                        <span class="copy-code">COPY</span>
+                    </div>
+                                       
+                    <div class="pre-wrapper">
+                        <pre class="code-block"><code>This is a long command line consectetur adipiscing elit. Integer nec odio. Praesent libero consectetur adipiscing elit. Integer nec odio. Praesent libero...</code></pre>
+                        <span class="copy-code">COPY</span>
+                    </div>  
+            
+                    <div class="pre-wrapper">
+                        <pre class="code-block"><code>
+            .navbar {
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+            }
+            
+            .navbar li a {
+                color: var(--menu-link-color);
+                display: flex;
+                text-decoration: none;
+            }
+            
+            .nav-links li a:hover {
+                color: var(--menu-link-hover-color);
+                background: none;
+                font-size: calc(var(--font-size) + 2px);
+            }
+                        </code></pre>
+                        <span class="copy-code">COPY</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lists-section">
+                <div class="row">
+                    <div class="column">
+                        <h2>Unordered List</h2>
+                        <ul>
+                            <li>Item One</li>
+                            <li>Item Two</li>
+                            <li>Item Three</li>
+                        </ul>
+                    </div>
+            
+                    <div class="column">
+                        <h2>Ordered List</h2>
+                        <ol>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                            <li>List Item
+                              <ol>
+                                <li>List Item</li>
+                                <li>List Item
+                                  <ol>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                    <li>List Item</li>
+                                  </ol>
+                                </li>
+                                <li>List Item</li>
+                              </ol>
+                            </li>
+                            <li>List Item</li>
+                            <li>List Item
+                              <ol>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                              </ol>
+                            </li>
+                            <li>List Item</li>
+                            <li>List Item</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="form-section">
+                <h2>Contact Form</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="feedback">Feedback</option>
+                        <option value="question">Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+            
+            <section class="search-section">
+                <h2>Search Box</h2>
+                <div id="search-container">
+                    <input type="text" id="search-box" name="search-box" spellcheck="false" placeholder="Enter search keywords...">
+                </div>
+            </section>
+            
+            <section class="file-upload-section">
+                <h2>File Upload and Buttons</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                <label for="pdfFile" class="button btn-outline">Select PDF file</label>
+                <input type="file" id="pdfFile" accept=".pdf">
+                <button type="submit" disabled>Disabled Button</button>        
+                <button class="btn-primary">Another button</button>
+                <button class="btn-primary" disabled>Another disabled button</button>
+                <button class="btn-primary">Another button</button>
+                <button class="btn-primary">Another button</button>
+            </section>
+
+            <section class="textarea-section">
+                <h2>Read-only Text Area</h2>
+                <textarea id="output" rows="10" cols="80" readonly>This is a readonly text area. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</textarea>
+                <button id="copyButton">Copy text to clipboard</button>
+                <button id="downloadButton">Download as (.txt) text file</button>
+            </section>
+            </main>
+            <footer id="footer">
+                 <span id="footer-copyright"></span> | <a href="#" id="theme-switcher">SWITCH-THEME</a>
+                 <div id="scrollToTop" class="scroll-to-top hidden" aria-label="Scroll to top">
+                    <div class="scroll-to-top-arrow"></div>
+                </div>
+                </footer>
+            </div> <!-- .wrapper -->  
+            <script src="js/bsbase.js"></script>
+            <script src="js/demo.js"></script>
+            </body>
+            </html>
