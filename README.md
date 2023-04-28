@@ -1,14 +1,14 @@
 # BSBase - A simple responsive mobile friendly baseline HTML CSS JS Template
 
-## <a href="https://bradsec.github.io/htmltemplate/">Preview Template</a>
+### <a href="https://bradsec.github.io/bsbase/">Preview Template - https://bradsec.github.io/bsbase/</a>
 
-## Features
+### Features
 
 - Mobile device friendly responsive layout and menu.
 - Uses current CSS standard variables for easy customisation.
-- No external libraries or fonts currently used.
+- Standalone. No external libraries or fonts currently used.
 
-## Usage
+### Usage
 
 - Add your own content within the `main` element.
 - Customize the menu by modifying the `nav-links` list items.
@@ -16,7 +16,7 @@
 - Footer values are taken from meta author tag `meta name="author" content="BRADSEC"`
 - Edit the `js/bsbase.js` to customise javascript functions.
 
-## Structure
+### Structure
 
 - `index.html`: Main HTML file
 - `css/bsbase.css`: CSS Styles
